@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+	<head>
+		<title>
+			HMMT Internal Tools
+		</title>
+		<!--<link rel="stylesheet" href="http://hmmt.mit.edu/submit/dispatch.fcgi/static/main.css" type="text/css" media="screen" charset="utf-8" />
+		<script type="text/javascript" src="http://hmmt.mit.edu/submit/dispatch.fcgi/static/main.js" />
+		</script>-->
+	</head>
+	<body onload="scan_for_submit_once_buttons();">
+
+		<div id="wrap">
+			<div id="logowrap">
+				<div id="logo">
+				</div>
+			</div>
+
+			<article>
+
+
+				<div class="aux">
+					Please login using your Babbage credentials. You can register for a Babbage account <a href="http://hmmt.mit.edu/reg/userreg/">here.</a> BYour account will need to be confirmed by the Scripts team before you can access the database.
+				</div>
+
+
+				<form action="/submit/dispatch.fcgi/login" method="POST" name="loginform">
+					<input type="hidden" name="islogin" value="true">
+					<input type="hidden" name="path"
+					                value="" />
+					<input type="hidden" name="post"
+					                value="" />
+					<table>
+						<tr>
+							<td>
+								Username:
+							</td>
+							<td>
+								<input type="text" name="username" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Password:
+							</td>
+							<td>
+								<input type="password" name="password" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="Login" class="submit_once" />
+							</td>
+						</tr>
+					</table>
+				</form>
+
+			</article>
+
+		</div>
+
+		<footer>
+			Designed by <a href=mailto:liangjy@mit.edu>Jason Liang</a>.
+		</footer>
+
+    </body>
+
+</html>
